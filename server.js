@@ -7,10 +7,27 @@ const app= express()
 // D DELETE = DELETE
 
 
-app.get("/", (req,res)=>{
-    res.send("Deus e perfeito!")
+app.get("/Deus",(req,res)=>{
+    // Requesição pro que o usuario fez
+    res.send("<b>Deus é perfeito<b>")
 })
 
+app.get('/',(req,res)=>{
+    res.send(`
+        Deus é perfeito ! 🦁
+        <form action="/" method="POST">
+            Nome: <input type="text" name="nome">
+            <button>Enviar</button>
+       </form>
+        
+        `)
+})
 
+app.post('/',(req,res)=>{
+    res.send(`Recebi o formulário`);
+})
 
-app.listen(3000)
+// Escutando a porta : 
+app.listen(3000,() =>{
+    console.log("🦁SERVIDOR EXECUTANDO NA PORTA 3000 http://127.0.0.1:3000/")
+})
