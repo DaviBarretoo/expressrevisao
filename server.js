@@ -31,3 +31,5 @@ app.post('/',(req,res)=>{
 app.listen(3000,() =>{
     console.log("🦁🦁SERVIDOR EXECUTANDO NA PORTA 3000 http://127.0.0.1:3000/")
 })
+
+//parei aula 131
