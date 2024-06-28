@@ -29,5 +29,5 @@ app.post('/',(req,res)=>{
 
 // Escutando a porta : 
 app.listen(3000,() =>{
-    console.log("🦁SERVIDOR EXECUTANDO NA PORTA 3000 http://127.0.0.1:3000/")
+    console.log("🦁🦁SERVIDOR EXECUTANDO NA PORTA 3000 http://127.0.0.1:3000/")
 })
